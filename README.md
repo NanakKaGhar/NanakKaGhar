@@ -30,6 +30,7 @@ We draw motivation from the wisdom found in Gurbani:
 
 #### Guru Gobind Singh Ji:
 > "hi(n)dhoo turak kouoo raafajee imaam saafee maanas kee jaat sabai ekai pahichaanabo ||"
+
 > Someone is Hindu and someone a Muslim, then someone is Shia, and someone a Sunni, but all human beings, as a species, are recognized as one and the same.
 
 #### Guru Arjan Dev Ji:
@@ -41,6 +42,7 @@ We draw motivation from the wisdom found in Gurbani:
 ### Join Us 🤝
 
 If you share our vision and values, join us on this remarkable journey to make a positive difference in the world. Together, we can create a better tomorrow. 🌈
+
 Contact Details - {(Will update soon)}
 **"A good work is the best prayer."**
 Let's make the world a better place, one act of kindness at a time! 🌍✨
