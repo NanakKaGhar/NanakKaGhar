@@ -7,7 +7,6 @@
     Nanak Ka Ghar Foundation | Compassion, Unity & Community Welfare
   </title>
 
-  
   <meta
     name="description"
     content="Nanak Ka Ghar Foundation is a secular, peace-promoting nonprofit organisation working toward unity, compassion, and community welfare through education, healthcare, and social development."
@@ -110,7 +109,7 @@
       top: -20px;
       left: 20px;
       font-size: 5rem;
-      color: rgba(255, 215, 0, 0.1);  /* Updated to new yellow */
+      color: rgba(255, 215, 0, 0.1);
       font-family: "Playfair Display", serif;
     }
 
@@ -119,15 +118,9 @@
     }
 
     @keyframes floating {
-      0% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-15px);
-      }
-      100% {
-        transform: translateY(0px);
-      }
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
     }
 
     .fade-in {
@@ -135,14 +128,8 @@
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .staggered-animation > * {
@@ -150,24 +137,53 @@
       animation: fadeIn 0.8s forwards;
     }
 
-    .staggered-animation > *:nth-child(1) {
-      animation-delay: 0.1s;
-    }
-    .staggered-animation > *:nth-child(2) {
-      animation-delay: 0.3s;
-    }
-    .staggered-animation > *:nth-child(3) {
-      animation-delay: 0.5s;
-    }
-    .staggered-animation > *:nth-child(4) {
-      animation-delay: 0.7s;
-    }
+    .staggered-animation > *:nth-child(1) { animation-delay: 0.1s; }
+    .staggered-animation > *:nth-child(2) { animation-delay: 0.3s; }
+    .staggered-animation > *:nth-child(3) { animation-delay: 0.5s; }
+    .staggered-animation > *:nth-child(4) { animation-delay: 0.7s; }
 
-    .wave-divider { height: 100px; width: 100%; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="%231a365d" fill-opacity="1" d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,74.7C1120,75,1280,117,1360,138.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>'); background-size: cover; background-position: center; margin-top: -1px; } .wave-divider-bottom { height: 100px; width: 100%; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="%231a365d" fill-opacity="1" d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,74.7C1120,75,1280,117,1360,138.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>'); background-size: cover; background-position: center; margin-bottom: -1px; }
+    .wave-divider { height: 100px; width: 100%; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="%231a365d" fill-opacity="1" d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,74.7C1120,75,1280,117,1360,138.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>'); background-size: cover; background-position: center; margin-top: -1px; } 
+    .wave-divider-bottom { height: 100px; width: 100%; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="%231a365d" fill-opacity="1" d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,74.7C1120,75,1280,117,1360,138.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>'); background-size: cover; background-position: center; margin-bottom: -1px; }
 
     .input-focus:focus {
       outline: none;
-      box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3);  /* Updated to new yellow */
+      box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3);
+    }
+    
+    /* Navbar Glassmorphism effect when scrolled */
+    .header-scrolled {
+      background: rgba(26, 54, 93, 0.85);
+      backdrop-filter: blur(12px);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Desktop Nav Underline Animation */
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #FFD700;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Pixel-Perfect Hamburger Animation */
+    .menu-open #line1 { transform: translateY(0) rotate(45deg); }
+    .menu-open #line2 { opacity: 0; transform: scaleX(0); }
+    .menu-open #line3 { transform: translateY(0) rotate(-45deg); width: 1.5rem; }
+
+    /* Mobile Menu Active State */
+    .mobile-menu-active {
+      visibility: visible;
+      opacity: 1;
     }
 
     .stat-card {
@@ -177,7 +193,7 @@
 
     .stat-card:hover {
       transform: translateY(-5px);
-      border-bottom: 3px solid #FFD700;  /* Updated to new yellow */
+      border-bottom: 3px solid #FFD700;
     }
 
     .value-card {
@@ -193,7 +209,7 @@
       left: 0;
       width: 100%;
       height: 5px;
-      background: #FFD700;  /* Updated to new yellow */
+      background: #FFD700;
       transform: scaleX(0);
       transform-origin: left;
       transition: transform 0.3s ease;
@@ -214,7 +230,7 @@
 
     .social-icon:hover {
       transform: translateY(-3px);
-      color: #FFD700;  /* Updated to new yellow */
+      color: #FFD700;
     }
   </style>
 </head>
@@ -233,114 +249,58 @@
   </div>
 
   <!-- Navbar -->
-  <header
-    class="flex items-center justify-between px-6 py-4 bg-primary shadow-lg sticky top-0 z-40 transition-all duration-300"
-  >
-    <div class="flex items-center space-x-3">
-      <div
-        class="w-11 h-10 bg-accent rounded-full flex items-center justify-center"
-      >
-        <img src="logo.png" alt="Nanak Ka Ghar Foundation Logo" class="h-11 w-11" />
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-3 group cursor-pointer">
+        <div class="w-11 h-11 bg-accent rounded-xl flex items-center justify-center shadow-lg transform group-hover:rotate-6 transition-transform duration-300">
+          <img src="logo.png" alt="Nanak Ka Ghar Logo" class="h-9 w-9" />
+        </div>
+        <span class="text-xl md:text-2xl font-bold text-light font-serif tracking-tight">
+          Nanak Ka Ghar <span class="text-accent hidden sm:inline">Foundation</span>
+        </span>
       </div>
-      <span class="text-2xl font-bold text-light font-serif"
-        >Nanak Ka Ghar Foundation</span
-      >
+
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a href="#mission" class="nav-link text-sm font-medium text-light/90 hover:text-accent transition-colors relative pb-1">Our Mission</a>
+        <a href="#values" class="nav-link text-sm font-medium text-light/90 hover:text-accent transition-colors relative pb-1">Core Values</a>
+        <a href="#projects" class="nav-link text-sm font-medium text-light/90 hover:text-accent transition-colors relative pb-1">Projects</a>
+        <a href="#impact" class="nav-link text-sm font-medium text-light/90 hover:text-accent transition-colors relative pb-1">Impact</a>
+        <a href="#contact" class="bg-accent text-primary font-bold py-2.5 px-6 rounded-full hover:shadow-[0_0_20px_rgba(255,215,0,0.3)] transition-all duration-300 active:scale-95">
+          Get Involved
+        </a>
+      </nav>
+
+      <button id="mobile-menu-button" class="lg:hidden relative z-50 w-10 h-10 flex items-center justify-center focus:outline-none group">
+        <div class="relative flex items-center justify-center w-6 h-6">
+          <span id="line1" class="absolute w-6 h-0.5 bg-light transition-all duration-300 -translate-y-2 rounded-full"></span>
+          <span id="line2" class="absolute w-6 h-0.5 bg-light transition-all duration-300 rounded-full"></span>
+          <span id="line3" class="absolute w-4 h-0.5 bg-light transition-all duration-300 translate-y-2 right-0 rounded-full group-hover:w-6"></span>
+        </div>
+      </button>
     </div>
-
-    <nav class="hidden md:flex space-x-6">
-      <a
-        href="#mission"
-        class="text-light hover:text-accent transition-colors duration-300"
-        >Our Mission</a
-      >
-      <a
-        href="#values"
-        class="text-light hover:text-accent transition-colors duration-300"
-        >Core Values</a
-      >
-      <a
-        href="#projects"
-        class="text-light hover:text-accent transition-colors duration-300"
-        >Our Projects</a
-      >
-      <a
-        href="#impact"
-        class="text-light hover:text-accent transition-colors duration-300"
-        >Our Impact</a
-      >
-      <a
-        href="#contact"
-        class="text-light hover:text-accent transition-colors duration-300"
-        >Contact</a
-      >
-    </nav>
-
-    <a href="#contact"><button
-      class="bg-accent text-primary font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-md hidden md:block"
-    >
-      Get Involved
-    </button></a>
-
-    <!-- Mobile Menu Button -->
-    <button id="mobile-menu-button" class="md:hidden text-light">
-      <svg
-        class="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"
-        ></path>
-      </svg>
-    </button>
   </header>
 
-  <!-- Mobile Menu -->
-  <div
-    id="mobile-menu"
-    class="hidden md:hidden bg-primary py-4 px-6 absolute top-20 left-0 right-0 z-30 shadow-lg"
-  >
-    <div class="flex flex-col space-y-4">
-      <a
-        href="#mission"
-        class="text-light hover:text-accent transition-colors duration-300"
-        >Our Mission</a
-      >
-      <a
-        href="#values"
-        class="text-light hover:text-accent transition-colors duration-300"
-        >Core Values</a
-      >
-      <a
-        href="#projects"
-        class="text-light hover:text-accent transition-colors duration-300"
-        >Our Projects</a
-      >
-      <a
-        href="#impact"
-        class="text-light hover:text-accent transition-colors duration-300"
-        >Our Impact</a
-      >
-      <a
-        href="#contact"
-        class="text-light hover:text-accent transition-colors duration-300"
-        >Contact</a
-      >
-      <a href="#contact"><button
-        class="bg-accent text-primary font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-md"
-      >
-        Get Involved
-      </button></a>
-    </div>
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 invisible opacity-0 transition-all duration-500">
+    <div class="absolute inset-0 bg-primary/95 backdrop-blur-xl"></div>
+    
+    <nav class="relative h-full flex flex-col justify-center items-center space-y-8 px-6">
+      <a href="#mission" class="mobile-nav-link text-3xl font-serif text-light hover:text-accent transition-all">Our Mission</a>
+      <a href="#values" class="mobile-nav-link text-3xl font-serif text-light hover:text-accent transition-all">Core Values</a>
+      <a href="#projects" class="mobile-nav-link text-3xl font-serif text-light hover:text-accent transition-all">Our Projects</a>
+      <a href="#impact" class="mobile-nav-link text-3xl font-serif text-light hover:text-accent transition-all">Our Impact</a>
+      <a href="#contact" class="mobile-nav-link text-3xl font-serif text-light hover:text-accent transition-all">Contact</a>
+      
+      <div class="pt-10">
+        <a href="#contact" class="mobile-nav-link bg-accent text-primary font-bold py-4 px-10 rounded-full text-xl shadow-2xl">
+          Get Involved
+        </a>
+      </div>
+    </nav>
   </div>
 
   <!-- Hero Section -->
-  <section class="hero-bg py-24 px-4 relative overflow-hidden">
+  <section class="hero-bg pt-36 pb-24 px-4 relative overflow-hidden">
     <div class="max-w-6xl mx-auto text-center relative z-10">
       <div class="inline-block mb-6">
         <div
@@ -461,7 +421,7 @@
       </div>
       <p class="text-2xl italic font-serif mb-8 text-light">
         "We may be many things —names, beliefs, identities —but before all, we are human.
-And in that first truth, we are not strangers, but reflections of the same soul."
+        And in that first truth, we are not strangers, but reflections of the same soul."
       </p>
       <p class="text-lg font-medium text-gray-400">– Nanak Ka Ghar Foundation</p>
     </div>
@@ -603,19 +563,8 @@ And in that first truth, we are not strangers, but reflections of the same soul.
         <div class="grid md:grid-cols-2 gap-6">
           <div class="flex items-start">
             <div class="bg-accent p-2 rounded mr-4 mt-1">
-              <svg
-                class="w-5 h-5 text-primary"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                ></path>
+              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
               </svg>
             </div>
             <div>
@@ -629,19 +578,8 @@ And in that first truth, we are not strangers, but reflections of the same soul.
 
           <div class="flex items-start">
             <div class="bg-accent p-2 rounded mr-4 mt-1">
-              <svg
-                class="w-5 h-5 text-primary"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                ></path>
+              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
               </svg>
             </div>
             <div>
@@ -655,19 +593,8 @@ And in that first truth, we are not strangers, but reflections of the same soul.
 
           <div class="flex items-start">
             <div class="bg-accent p-2 rounded mr-4 mt-1">
-              <svg
-                class="w-5 h-5 text-primary"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                ></path>
+              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
               </svg>
             </div>
             <div>
@@ -681,19 +608,8 @@ And in that first truth, we are not strangers, but reflections of the same soul.
 
           <div class="flex items-start">
             <div class="bg-accent p-2 rounded mr-4 mt-1">
-              <svg
-                class="w-5 h-5 text-primary"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
+              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
             <div>
@@ -712,9 +628,7 @@ And in that first truth, we are not strangers, but reflections of the same soul.
   <!-- Wave Divider Bottom -->
   <div class="wave-divider-bottom"></div>
 
-   
-
-   <!-- Mission Section -->
+  <!-- Mission Section -->
   <section id="mission" class="py-20 px-6 bg-primary">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
@@ -876,19 +790,8 @@ And in that first truth, we are not strangers, but reflections of the same soul.
           <div class="space-y-6">
             <div class="flex items-start">
               <div class="bg-accent p-2 rounded mr-4">
-                <svg
-                  class="w-5 h-5 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  ></path>
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
               </div>
               <div>
@@ -899,19 +802,8 @@ And in that first truth, we are not strangers, but reflections of the same soul.
 
             <div class="flex items-start">
               <div class="bg-accent p-2 rounded mr-4">
-                <svg
-                  class="w-5 h-5 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  ></path>
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                 </svg>
               </div>
               <div>
@@ -922,25 +814,9 @@ And in that first truth, we are not strangers, but reflections of the same soul.
 
             <div class="flex items-start">
               <div class="bg-accent p-2 rounded mr-4">
-                <svg
-                  class="w-5 h-5 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  ></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  ></path>
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
               </div>
               <div>
@@ -952,60 +828,24 @@ And in that first truth, we are not strangers, but reflections of the same soul.
             <div class="pt-4">
               <h4 class="font-bold mb-3">Connect With Us</h4>
               <div class="flex space-x-4">
-                <a
-                  href="#"
-                  class="social-icon text-gray-400 hover:text-accent"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                    ></path>
+                <a href="#" class="social-icon text-gray-400 hover:text-accent">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
                   </svg>
                 </a>
-                <a
-                  href="#"
-                  class="social-icon text-gray-400 hover:text-accent"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
-                    ></path>
+                <a href="#" class="social-icon text-gray-400 hover:text-accent">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
                   </svg>
                 </a>
-                <a
-                  href="#"
-                  class="social-icon text-gray-400 hover:text-accent"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-                    ></path>
+                <a href="#" class="social-icon text-gray-400 hover:text-accent">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
                   </svg>
                 </a>
-                <a
-                  href="#"
-                  class="social-icon text-gray-400 hover:text-accent"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                    ></path>
+                <a href="#" class="social-icon text-gray-400 hover:text-accent">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
                   </svg>
                 </a>
               </div>
@@ -1055,75 +895,130 @@ And in that first truth, we are not strangers, but reflections of the same soul.
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-center py-12 px-4 border-t border-gray-800">
-    <div class="max-w-6xl mx-auto">
-      <div
-        class="flex flex-col md:flex-row justify-between items-center mb-8"
-      >
-        <div class="flex items-center space-x-3 mb-6 md:mb-0">
-          <div
-            class="w-12 h-12 bg-accent rounded-full flex items-center justify-center shadow-md"
-          >
-            <img src="logo.png" alt="Nanak Ka Ghar Foundation Logo" class="h-8 w-8" />
+  <footer class="bg-[#0a1120] text-light pt-20 pb-10 px-6 border-t border-gray-800 relative overflow-hidden">
+    <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-accent opacity-[0.03] rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        
+        <div class="space-y-6">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center shadow-lg transform rotate-3">
+              <img src="logo.png" alt="NKG Logo" class="h-8 w-8 -rotate-3" />
+            </div>
+            <span class="text-xl font-bold font-serif tracking-tight text-white">Nanak Ka Ghar</span>
           </div>
-          <span class="text-2xl font-bold text-light font-serif"
-            >Nanak Ka Ghar Foundation</span
-          >
+          <p class="text-gray-400 leading-relaxed text-sm">
+            Fostering peace, unity, and community welfare through education, healthcare, and inclusive social development for all of humanity.
+          </p>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
-          <a
-            href="#mission"
-            class="text-gray-400 hover:text-accent transition-colors"
-            >Our Mission</a
-          >
-          <a
-            href="#values"
-            class="text-gray-400 hover:text-accent transition-colors"
-            >Core Values</a
-          >
-          <a
-            href="#projects"
-            class="text-gray-400 hover:text-accent transition-colors"
-            >Our Projects</a
-          >
-          <a
-            href="#impact"
-            class="text-gray-400 hover:text-accent transition-colors"
-            >Our Impact</a
-          >
-          <a
-            href="#contact"
-            class="text-gray-400 hover:text-accent transition-colors"
-            >Contact</a
-          >
-          <a
-            onclick="comingSoon()"
-            class="text-gray-400 hover:text-accent transition-colors"
-            >About Us</a
-          >
+        <div>
+          <h4 class="text-white font-bold mb-6 relative inline-block">
+            Explore
+            <span class="absolute bottom-0 left-0 w-8 h-0.5 bg-accent"></span>
+          </h4>
+          <ul class="space-y-4">
+            <li><a href="#mission" class="text-gray-400 hover:text-accent hover:translate-x-1 transition-all inline-block">Our Mission</a></li>
+            <li><a href="#projects" class="text-gray-400 hover:text-accent hover:translate-x-1 transition-all inline-block">Active Projects</a></li>
+            <li><a href="#impact" class="text-gray-400 hover:text-accent hover:translate-x-1 transition-all inline-block">Impact Stories</a></li>
+            <li><a onclick="comingSoon()" class="text-gray-400 hover:text-accent hover:translate-x-1 transition-all inline-block cursor-pointer">About Us</a></li>
+          </ul>
         </div>
 
-        <button
-          onclick="comingSoon()"
-          class="bg-accent text-primary font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-md"
-        >
-          Donate Now
-        </button>
+        <div>
+          <h4 class="text-white font-bold mb-6 relative inline-block">
+            Contact Us
+            <span class="absolute bottom-0 left-0 w-8 h-0.5 bg-accent"></span>
+          </h4>
+          <ul class="space-y-4">
+            <li class="flex items-center space-x-3 text-gray-400">
+              <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              <span class="text-sm">contact@nanakkaghar.org</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-400">
+              <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+              <span class="text-sm">Global Operations (Remote)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-6">Support Our Cause</h4>
+          <p class="text-gray-400 text-sm mb-6 leading-relaxed">Join our mission to create a world built on compassion and mutual respect.</p>
+          <button onclick="comingSoon()" class="w-full bg-accent text-primary font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-all shadow-lg hover:shadow-yellow-500/20 active:scale-95">
+            Donate Now
+          </button>
+        </div>
       </div>
 
-      <div class="border-t border-gray-800 pt-8">
-        <p class="text-gray-500">
-          &copy; 2025 Nanak Ka Ghar Foundation <br> All rights reserved.<br />
-          <h3>Compassion, Unity & Community Welfare</h3>
-        </p>
+      <div class="pt-8 border-t border-gray-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="text-gray-500 text-xs text-center md:text-left">
+          <p>&copy; 2026 Nanak Ka Ghar Foundation. Built for Human Unity.</p>
+        </div>
+        <div class="flex space-x-6 text-xs text-gray-500">
+          <a href="#" class="hover:text-accent transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-accent transition-colors">Terms of Service</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Mailto Script -->
+
+  <!-- Interactive Scripts -->
   <script>
-    // Preloader
+    // 1. Mobile Menu & Navbar Scroll Logic
+    const header = document.getElementById('main-header');
+    const mobileMenuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const body = document.body;
+
+    // Change Navbar Style on Scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('header-scrolled');
+      } else {
+        header.classList.remove('header-scrolled');
+      }
+    });
+
+    // Toggle Mobile Menu
+    mobileMenuBtn.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.contains('mobile-menu-active');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    function openMenu() {
+      mobileMenu.classList.remove('invisible', 'opacity-0');
+      mobileMenu.classList.add('mobile-menu-active', 'opacity-100');
+      mobileMenuBtn.classList.add('menu-open');
+      body.style.overflow = 'hidden'; // Stop background scrolling
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove('mobile-menu-active', 'opacity-100');
+      mobileMenu.classList.add('opacity-0');
+      mobileMenuBtn.classList.remove('menu-open');
+      body.style.overflow = ''; // Restore scrolling
+      
+      setTimeout(() => {
+        if (!mobileMenu.classList.contains('mobile-menu-active')) {
+          mobileMenu.classList.add('invisible');
+        }
+      }, 500);
+    }
+
+    // Close menu when clicking links
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // 2. Preloader Logic
     window.addEventListener("load", function () {
       const preloader = document.getElementById("preloader");
       setTimeout(() => {
@@ -1134,23 +1029,7 @@ And in that first truth, we are not strangers, but reflections of the same soul.
       }, 800);
     });
 
-    // Mobile Menu
-    const mobileMenuButton = document.getElementById("mobile-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
-
-    mobileMenuButton.addEventListener("click", function () {
-      mobileMenu.classList.toggle("hidden");
-    });
-
-    // Close mobile menu when clicking a link
-    const mobileLinks = mobileMenu.querySelectorAll("a");
-    mobileLinks.forEach((link) => {
-      link.addEventListener("click", function () {
-        mobileMenu.classList.add("hidden");
-      });
-    });
-
-    // Form submission
+    // 3. Form Submission
     function submitEmail(event) {
       event.preventDefault();
       const name = document.getElementById("name").value;
@@ -1158,13 +1037,13 @@ And in that first truth, we are not strangers, but reflections of the same soul.
       const message = document.getElementById("message").value;
 
       const subject = encodeURIComponent("Message from " + name);
-      const body = encodeURIComponent("Email: " + email + "\n\n" + message);
+      const bodyText = encodeURIComponent("Email: " + email + "\n\n" + message);
 
       window.location.href =
-        "mailto:contact@nanakkaghar.org?subject=" + subject + "&body=" + body;
+        "mailto:contact@nanakkaghar.org?subject=" + subject + "&body=" + bodyText;
     }
 
-    // Animation on scroll
+    // 4. Animation on scroll (Intersection Observer)
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -1180,11 +1059,10 @@ And in that first truth, we are not strangers, but reflections of the same soul.
       observer.observe(el);
     });
 
-    //Coming Soon Alert
+    // 5. Coming Soon Alert
     function comingSoon() {
       alert("Coming soon!");
     }
   </script>
 </body>
 </html>
-
