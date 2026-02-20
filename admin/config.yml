@@ -2,7 +2,7 @@ backend:
   name: github
   repo: NanakKaGhar/NanakKaGhar
   branch: main
-  base_url: http://deluxe-torte-fca182.netlify.app/
+  base_url: https://api.netlify.com
   auth_endpoint: /api/auth
 # Where images are stored in your repo
 media_folder: "images/uploads"
