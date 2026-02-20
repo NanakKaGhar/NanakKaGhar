@@ -12,50 +12,55 @@
     content="Nanak Ka Ghar Foundation is a secular, peace-promoting nonprofit organisation working toward unity, compassion, and community welfare through education, healthcare, and social development."
   />
 
-  <!-- Inclusive Meta Keywords -->
   <meta
     name="keywords"
-    content="Nanak Ka Ghar Foundation, Nonprofit, Peace Organisation, Community Welfare, Compassion, Social Change, Education, Healthcare, Equality, Public Health, Humanitarian Aid, Social Justice, Volunteer, Inclusive Development"
+    content="Nanak Ka Ghar Foundation, Nonprofit, Peace Organisation, Community Welfare, Compassion, Social Change, Education, Healthcare, Equality, Public Health, Humanitarian Aid, Social Justice, Volunteer, Inclusive Development, NGO Blog"
   />
 
-  <!-- Author -->
   <meta name="author" content="Nanak Ka Ghar Foundation" />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="./index.html" />
+  <link rel="canonical" href="https://www.nanakkaghar.org/" />
 
-  <!-- Open Graph Tags -->
   <meta property="og:title" content="Nanak Ka Ghar Foundation" />
   <meta
     property="og:description"
     content="A nonprofit promoting truth, unity and compassion through inclusive social services for all communities."
   />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="logo.png" />
-  <meta property="og:url" content="./index.html" />
+  <meta property="og:image" content="https://www.nanakkaghar.org/logo.png" />
+  <meta property="og:url" content="https://www.nanakkaghar.org/" />
 
-  <!-- Twitter Card Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Nanak Ka Ghar Foundation" />
   <meta
     name="twitter:description"
     content="Working for unity, compassion, and social betterment across communities."
   />
-  <meta name="twitter:image" content="logo.png" />
+  <meta name="twitter:image" content="https://www.nanakkaghar.org/logo.png" />
 
-  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-  <!-- Tailwind CSS CDN -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Nanak Ka Ghar Foundation",
+    "url": "https://www.nanakkaghar.org/",
+    "logo": "https://www.nanakkaghar.org/logo.png",
+    "description": "Nanak Ka Ghar Foundation is a secular nonprofit organization dedicated to fostering peace, unity, and community welfare through education, healthcare, and inclusive social development.",
+    "sameAs": [
+      "https://blog.nanakkaghar.org/"
+    ]
+  }
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
     rel="stylesheet"
   />
 
-  <!-- Custom Styles -->
   <script>
     tailwind.config = {
       theme: {
@@ -238,7 +243,6 @@
 <body
   class="bg-gradient-to-br from-primary to-dark text-light font-sans antialiased"
 >
-  <!-- Preloader -->
   <div
     id="preloader"
     class="fixed inset-0 bg-primary z-50 flex items-center justify-center transition-opacity duration-500"
@@ -248,7 +252,6 @@
     ></div>
   </div>
 
-  <!-- Navbar -->
   <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 py-4">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center space-x-3 group cursor-pointer">
@@ -265,6 +268,8 @@
         <a href="#values" class="nav-link text-sm font-medium text-light/90 hover:text-accent transition-colors relative pb-1">Core Values</a>
         <a href="#projects" class="nav-link text-sm font-medium text-light/90 hover:text-accent transition-colors relative pb-1">Projects</a>
         <a href="#impact" class="nav-link text-sm font-medium text-light/90 hover:text-accent transition-colors relative pb-1">Impact</a>
+        <a href="https://blog.nanakkaghar.org/" target="_blank" rel="noopener noreferrer" class="nav-link text-sm font-medium text-light/90 hover:text-accent transition-colors relative pb-1">Blog</a>
+        
         <a href="#contact" class="bg-accent text-primary font-bold py-2.5 px-6 rounded-full hover:shadow-[0_0_20px_rgba(255,215,0,0.3)] transition-all duration-300 active:scale-95">
           Get Involved
         </a>
@@ -280,7 +285,6 @@
     </div>
   </header>
 
-  <!-- Mobile Menu Overlay -->
   <div id="mobile-menu" class="fixed inset-0 z-40 invisible opacity-0 transition-all duration-500">
     <div class="absolute inset-0 bg-primary/95 backdrop-blur-xl"></div>
     
@@ -289,9 +293,10 @@
       <a href="#values" class="mobile-nav-link text-3xl font-serif text-light hover:text-accent transition-all">Core Values</a>
       <a href="#projects" class="mobile-nav-link text-3xl font-serif text-light hover:text-accent transition-all">Our Projects</a>
       <a href="#impact" class="mobile-nav-link text-3xl font-serif text-light hover:text-accent transition-all">Our Impact</a>
+      <a href="https://blog.nanakkaghar.org/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link text-3xl font-serif text-light hover:text-accent transition-all">Blog</a>
       <a href="#contact" class="mobile-nav-link text-3xl font-serif text-light hover:text-accent transition-all">Contact</a>
       
-      <div class="pt-10">
+      <div class="pt-10 flex flex-col items-center gap-4">
         <a href="#contact" class="mobile-nav-link bg-accent text-primary font-bold py-4 px-10 rounded-full text-xl shadow-2xl">
           Get Involved
         </a>
@@ -299,7 +304,6 @@
     </nav>
   </div>
 
-  <!-- Hero Section -->
   <section class="hero-bg pt-36 pb-24 px-4 relative overflow-hidden">
     <div class="max-w-6xl mx-auto text-center relative z-10">
       <div class="inline-block mb-6">
@@ -325,19 +329,18 @@
 
       <div class="flex flex-col sm:flex-row justify-center gap-4">
         <a href="#contact"><button
-          class="bg-accent text-primary font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-lg transform hover:-translate-y-1"
+          class="bg-accent text-primary font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-lg transform hover:-translate-y-1 w-full sm:w-auto"
         >
           Get Involved
         </button></a>
-        <a href="#mission"><button
-          class="bg-transparent border-2 border-accent text-accent font-bold py-3 px-8 rounded-full hover:bg-accent hover:bg-opacity-10 transition-all duration-300"
-        >
-          Learn More
-        </button></a>
+        <a href="https://blog.nanakkaghar.org/" target="_blank" rel="noopener noreferrer">
+          <button class="bg-transparent border-2 border-accent text-accent font-bold py-3 px-8 rounded-full hover:bg-accent hover:bg-opacity-10 transition-all duration-300 w-full sm:w-auto">
+            Read Our Blog
+          </button>
+        </a>
       </div>
     </div>
 
-    <!-- Floating Elements -->
     <div
       class="absolute top-1/4 left-10 w-4 h-4 bg-accent rounded-full opacity-30 floating"
       style="animation-delay: 0s"
@@ -352,7 +355,6 @@
     ></div>
   </section>
 
-  <!-- Core Values -->
   <section
     id="values"
     class="py-20 px-6 bg-gradient-to-r from-primary to-dark"
@@ -411,7 +413,6 @@
     </div>
   </section>
 
-  <!-- Quote Section -->
   <section class="py-20 px-6 bg-dark relative overflow-hidden">
     <div class="max-w-4xl mx-auto text-center relative z-10">
       <div
@@ -426,7 +427,6 @@
       <p class="text-lg font-medium text-gray-400">– Nanak Ka Ghar Foundation</p>
     </div>
 
-    <!-- Floating Elements -->
     <div
       class="absolute top-1/4 left-1/4 w-4 h-4 bg-accent rounded-full opacity-10 floating"
       style="animation-delay: 0.5s"
@@ -437,7 +437,6 @@
     ></div>
   </section>
 
-  <!-- Our Projects Section -->
   <section id="projects" class="py-20 px-6 bg-secondary">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
@@ -451,7 +450,6 @@
       </div>
 
       <div class="grid md:grid-cols-2 gap-10 staggered-animation">
-        <!-- NKG Peers Project -->
         <div class="mission-card bg-primary bg-opacity-50 p-8 rounded-xl border border-gray-700">
           <div class="flex items-start mb-6">
             <div class="bg-accent p-3 rounded-lg mr-4">
@@ -484,7 +482,7 @@
               <span>Community of dedicated innovators</span>
             </li>
           </ul>
-          <a href="https://nkgpeers.nanakkaghar.org/" target="_blank" class="inline-flex items-center bg-accent text-primary font-bold py-3 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-md">
+          <a href="https://nkgpeers.nanakkaghar.org/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-accent text-primary font-bold py-3 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-md">
             Explore Platform
             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
@@ -492,7 +490,6 @@
           </a>
         </div>
 
-        <!-- NKG MedShare Project -->
         <div class="mission-card bg-primary bg-opacity-50 p-8 rounded-xl border border-gray-700">
           <div class="flex items-start mb-6">
             <div class="bg-accent p-3 rounded-lg mr-4">
@@ -525,7 +522,7 @@
               <span>Shared medical resources for all</span>
             </li>
           </ul>
-          <a href="https://nkgmedshare.nanakkaghar.org/" target="_blank" class="inline-flex items-center bg-accent text-primary font-bold py-3 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-md">
+          <a href="https://nkgmedshare.nanakkaghar.org/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-accent text-primary font-bold py-3 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-md">
             Access MedShare
             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
@@ -536,7 +533,6 @@
     </div>
   </section>
   
-  <!-- Impact Section -->
   <section id="impact" class="py-20 px-6 bg-primary">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
@@ -625,10 +621,8 @@
     </div>
   </section>
 
-  <!-- Wave Divider Bottom -->
   <div class="wave-divider-bottom"></div>
 
-  <!-- Mission Section -->
   <section id="mission" class="py-20 px-6 bg-primary">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
@@ -764,10 +758,23 @@
     </div>
   </section>
 
-  <!-- Wave Divider -->
+  <section class="py-16 px-6 bg-dark relative overflow-hidden">
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <h2 class="text-3xl font-serif font-bold mb-4 text-light">Voices of Compassion</h2>
+      <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+        Dive into our stories, insights, and updates on how we are building bridges of unity across communities.
+      </p>
+      <a href="https://blog.nanakkaghar.org/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center group text-accent font-bold text-lg hover:text-yellow-300 transition-colors">
+        Explore Our Official Blog
+        <svg class="w-6 h-6 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
   <div class="wave-divider-bottom"></div>
 
-  <!-- Contact Form -->
   <section id="contact" class="py-20 px-6 bg-primary">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-12">
@@ -894,7 +901,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-[#0a1120] text-light pt-20 pb-10 px-6 border-t border-gray-800 relative overflow-hidden">
     <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-accent opacity-[0.03] rounded-full blur-3xl"></div>
 
@@ -922,6 +928,7 @@
             <li><a href="#mission" class="text-gray-400 hover:text-accent hover:translate-x-1 transition-all inline-block">Our Mission</a></li>
             <li><a href="#projects" class="text-gray-400 hover:text-accent hover:translate-x-1 transition-all inline-block">Active Projects</a></li>
             <li><a href="#impact" class="text-gray-400 hover:text-accent hover:translate-x-1 transition-all inline-block">Impact Stories</a></li>
+            <li><a href="https://blog.nanakkaghar.org/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-accent hover:translate-x-1 transition-all inline-block">Read Our Blog</a></li>
             <li><a onclick="comingSoon()" class="text-gray-400 hover:text-accent hover:translate-x-1 transition-all inline-block cursor-pointer">About Us</a></li>
           </ul>
         </div>
@@ -964,8 +971,6 @@
     </div>
   </footer>
 
-
-  <!-- Interactive Scripts -->
   <script>
     // 1. Mobile Menu & Navbar Scroll Logic
     const header = document.getElementById('main-header');
