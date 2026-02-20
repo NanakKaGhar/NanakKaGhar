@@ -3,7 +3,7 @@ backend:
   repo: NanakKaGhar/NanakKaGhar
   branch: main
   base_url: https://api.netlify.com
-  auth_endpoint: /api/auth
+  auth_endpoint: /auth
 # Where images are stored in your repo
 media_folder: "images/uploads"
 # How the website looks for those images
